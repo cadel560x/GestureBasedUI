@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+
+  <title>LeapMap</title>
+
+  <link href="js/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="js/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/custom.min.css" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leapjs/0.6.1/leap.min.js"></script>
+  <script src="js/three.js"></script>
+  <script src="js/leap-plugins-0.1.6.js"></script>
+  <script src="http://leapmotion.github.io/leapjs-network/lib/leap.rigged-hand-0.1.4.js"></script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1ptIqxvZLpayWsSscOgup_6CcRHNSACM&callback=initMap" async
+    defer></script>
+
+  <script src="js/leapmap.js"></script>
+
+</head>
+
+<body class="nav-md">
+
+  <div class="container body">
+    <div class="main_container">
+      <!-- top navigation -->
+      <div class="top_nav" style="margin-left: 5px;">
+        <div class="nav_menu">
+          <nav class="navbar navbar-default" role="navigation">
+            <div class="navbar nav_title" style="border: 0; background: #543a2a;">
+              <i class="fa fa-map site_title" aria-hidden="true"> LeapMap</i>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+              <li><button type="button" class="btn btn-primary btn-small glyphicon glyphicon-question-sign" data-toggle="modal" data-target="#myModal"></button></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- /top navigation -->
+
+      <!-- page content -->
+      <div class="left_col" role="main">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="x_panel">
+                <div class="x_content">
+                  <div id="map-canvas" class="canvas_size"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /page content -->
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">How to Use LeapMap</h4>
+        </div>
+        <div class="modal-body" align="left">
+          <br> The project allows a user to navigate Google Maps with hand motions inside a web browser.
+          <br>
+          <br>
+          <img src="images/gestures.jpeg" alt="LeapMap gestures" />
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery/dist/jquery.min.js"></script>
+  <script src="js/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/DateJS/date.js"></script>
+  <script src="js/custom.js"></script>
+
+</body>
+
+</html>
