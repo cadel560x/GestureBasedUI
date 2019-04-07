@@ -35,17 +35,7 @@ Some movements are pre-configured in the system, allowing the user to:
 - Hand closed, mapping the map;
 - Circular movements, zoom in and zoom out.
 
-### Samples
-Close the popups.
-
-![images](images/ClosePopup.gif)
-
-Navigate the map and control the zoom.
-
-![images](images/MoveMap.gif)
-
-![images](images/project.gif)
-
+### Video
 ![images](images/youtube.png)
 ## https://youtu.be/g7kntVLHfjk
 
