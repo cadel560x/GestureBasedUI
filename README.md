@@ -22,7 +22,7 @@ The project allows a user to navigate Google Street View with only hand motions 
 
 
 ## How it works
-We integrate the two Javascript APIs of Leap Motion, and of Google Maps, which allow us to achieve some amazing, downright futuristic hand gestures to manipulate Google Maps.
+I've integrated the two Javascript APIs of Leap Motion, and of Google Maps, which allowed me to achieve some amazing, downright futuristic hand gestures to manipulate Google Maps.
 
 ![images](images/leapHand.png)
 
@@ -78,7 +78,7 @@ See the demos below for how to set this up in a couple of lines.
   <script src="https://js.leapmotion.com/leap.rigged-hand-0.1.4.min.js"></script>
 ```
 #### Drawing Hands
-To draw hands on the map, since its a 2D map, we take only XY values of the hand's palm on the current frame, scale accordingly to map's zoom, add to origin's latitude and longitude. Doing so, the position in the map to draw the hand is obtained. We then use a built-in fuction of google map's api that allows drawing custom markers on the map to draw the hand icon on the newly obtained latitude and logitude.
+To draw hands on the map, since its a 2D map, I take only XY values of the hand's palm on the current frame, scale accordingly to map's zoom, add to origin's latitude and longitude. Doing so, the position in the map to draw the hand is obtained. I then use a built-in fuction of google map's api that allows drawing custom markers on the map to draw the hand icon on the newly obtained latitude and logitude.
 ```js
 newCenter = new google.maps.LatLng(origin.lat() + (hand.stabilizedPalmPosition[1]  *
                     scaling), origin.lng() + (hand.stabilizedPalmPosition[0] * scaling));
@@ -92,7 +92,7 @@ handMarker = new google.maps.Marker();
                     });
 ```
 #### Moving the map
-To move the map accordingly, at every frame we check how many pixels the palm moved in relation to the previous and add that to the current center point's latitute and longitude, needing then to only center the map to the newly obtained coordinates.
+To move the map accordingly, at every frame I check how many pixels the palm moved in relation to the previous and add that to the current center point's latitute and longitude, needing then to only center the map to the newly obtained coordinates.
 
 ```js
         var dX = leftHandPrev.stabilizedPalmPosition[X] - leftHand.stabilizedPalmPosition[X];
