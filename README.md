@@ -3,7 +3,7 @@
 ## Overview
 The Leap Motion system recognizes and tracks hands and fingers. The device operates in an intimate proximity with high precision and tracking frame rate and reports discrete positions and motion.
 
-![Screencast](Screencast/leap.jpg)
+![images](images/leap.jpg)
 
 The Leap Motion controller uses optical sensors and infrared light. The sensors are directed along the y-axis – upward when the controller is in its standard operating position – and have a field of view of about 150 degrees. The effective range of the Leap Motion Controller extends from approximately 25 to 600 millimeters above the device (1 inch to 2 feet).
 
@@ -12,10 +12,10 @@ Detection and tracking work best when the controller has a clear, high-contrast 
 ## Coordinate system
 The Leap Motion system employs a right-handed Cartesian coordinate system. The origin is centered at the top of the Leap Motion Controller. The x- and z-axes lie in the horizontal plane, with the x-axis running parallel to the long edge of the device. The y-axis is vertical, with positive values increasing upwards (in contrast to the downward orientation of most computer graphics coordinate systems). The z-axis has positive values increasing toward the user.
 
-![Screencast](Screencast/Leap_Axes.png)
+![images](images/Leap_Axes.png)
 
 ## The project
-![Screencast](Screencast/theproject.png)
+![images](images/theproject.png)
 The project is made up of the Leap Motion, Google Map & Street View, and HTML + JavaScript code for connecting the two of them. 
 
 The project allows a user to navigate Google Street View with only hand motions inside a web browser.
@@ -24,7 +24,7 @@ The project allows a user to navigate Google Street View with only hand motions 
 ## How it works
 We integrate the two Javascript APIs of Leap Motion, and of Google Maps, which allow us to achieve some amazing, downright futuristic hand gestures to manipulate Google Maps.
 
-![Screencast](Screencast/leapHand.png)
+![images](images/leapHand.png)
 
 Using the hands on the device, the user will be able to control the courses on the map.
 
@@ -38,20 +38,20 @@ Some movements are pre-configured in the system, allowing the user to:
 ### Samples
 Close the popups.
 
-![Screencast](Screencast/ClosePopup.gif)
+![images](images/ClosePopup.gif)
 
 Navigate the map and control the zoom.
 
-![Screencast](Screencast/MoveMap.gif)
+![images](images/MoveMap.gif)
 
-![Screencast](Screencast/project.gif)
+![images](images/project.gif)
 
-![Screencast](Screencast/youtube.png)
+![images](images/youtube.png)
 ## https://youtu.be/g7kntVLHfjk
 
 
 ## Technology
-![Screencast](Screencast/architecture.png)
+![images](images/architecture.png)
 
 ### Bootstrap
 Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.
@@ -110,24 +110,13 @@ To move the map accordingly, at every frame we check how many pixels the palm mo
     } 
 ```
 
-# Authors
+# Author
 
-### Alexander Souza
-- G00317835@gmit.ie
-- alexpt2000@gmail.com
-- https://github.com/alexpt2000gmit
-- https://github.com/alexpt2000
-- www.linkedin.com/in/alexander-souza-3a841539/
-
-### Pedro Mota
-- G00342002@gmit.ie
-- phomota@hotmail.com
-- https://github.com/PedroHOMota
-- www.linkedin.com/in/pedro-henrique-de-oliveira-mota-162307143/
-
+### Javier Mantilla
+- G00329649@gmit.ie  
+- https://github.com/cadel560x  
 
 ## References
 - [Bootstrap](https://getbootstrap.com/)
 - [LEAPJS](https://github.com/leapmotion/leapjs)
-- [JavaScript SDK Documentation](https://developer.leapmotion.com/documentation/javascript/index.html)
-- [Heroku](https://www.heroku.com/)
+- [JavaScript SDK Documentation](https://developer.leapmotion.com/documentation/javascript/index.html)  
