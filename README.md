@@ -1,8 +1,4 @@
 # 4 Year  GESTURE BASED UI DEVELOPMENT
-### Online at the following address.
-![Screencast](Screencast/herokup.png)
-## https://leapmapgmit.herokuapp.com/
-
 
 ## Overview
 The Leap Motion system recognizes and tracks hands and fingers. The device operates in an intimate proximity with high precision and tracking frame rate and reports discrete positions and motion.
