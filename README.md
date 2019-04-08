@@ -37,7 +37,7 @@ Some movements are pre-configured in the system, allowing the user to:
 
 ### Video
 ![images](images/youtube.png)
-## https://youtu.be/g7kntVLHfjk
+## https://www.youtube.com/watch?v=em0PR3sLYys
 
 
 ## Technology
